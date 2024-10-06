@@ -1,0 +1,104 @@
+<!--
+************************************ HTML SEMANTIC ELEMENT ************************************
+
+-A semantic element clearly describes its meaning to both the browser and the developer.
+-Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+-Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+
+
+In HTML there are some semantic elements that can be used to define different parts of a web page:  
+
+<article>                    ______________________
+<aside>                     |       <header>       |
+<details>                   |______________________|
+<figcaption>                |         <nav         |
+<figure>                    |______________________|     
+<footer>                    |           |          |
+<header>                    | <section> |          |
+<main>                      |___________| <aside>  |
+<mark>                      |           |          |
+<nav>                       | <artical> |          |
+<section>                   |___________|__________|
+<summary>                   |       <footer>       |
+<time>                      |______________________|
+
+
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<!--The <nav> element defines a set of navigation links.-->
+<nav>
+   <a href="/html/">Home</a> |
+   <a href="/css/">About</a> |
+   <a href="/js/">Producr</a> |
+   <a href="/jquery/">Cart</a>
+</nav>
+
+    
+<!--The <section> element defines a section in a document.-->
+<section>
+  <h1>WWF</h1>
+  <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+
+
+
+
+<!--The <article> element specifies independent, self-contained content.-->
+<article>
+    
+    <!--The <header> element represents a container for introductory content or a set of navigational links..-->
+    <header>
+        <h1>What Does WWF Do?</h1>
+        <p>WWF's mission:</p>
+    </header>
+
+    <h2>Google Chrome</h2>
+    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+</article>
+  
+
+
+
+<!--The <footer> element defines a footer for a document or section.-->
+<!--A <footer> element typically contains:
+*authorship information
+*copyright information
+*contact information
+*sitemap
+*back to top links
+*related documents
+-->
+<footer>
+    <p>Author: Hege Refsnes</p>
+    <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+
+
+
+<!--The <aside> element defines some content aside from the content it is placed in (like a sidebar).-->
+<!--The <aside> content should be indirectly related to the surrounding content.-->
+<aside>
+    <h4>Epcot Center</h4>
+    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+
+
+
+
+<!--The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.-->
+<!--The <figcaption> tag defines a caption for a <figure> element. The <figcaption> element can be placed as the first or as the last child of a <figure> element.-->
+<!--The <img> element defines the actual image/illustration. -->
+<figure>
+    <img src="image/img1.png" alt="Trulli" style="width:100%" width="300px" height="200px">
+    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
+  
+</body>
+</html>

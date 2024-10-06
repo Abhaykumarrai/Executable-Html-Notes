@@ -1,0 +1,55 @@
+<!--
+*************************** HTML Image Maps **********************************
+-With the help of an image map we can create different clickable areas on an image.
+
+-->
+
+
+
+<!DOCTYPE html> <html>
+<head>
+<title>Image Map</title>
+</head>
+<body>
+<!--
+***How To Create An image Map***
+
+1-insert an img with the help of img tag
+2-add usemap="#---" attribute in img tag with name of usemap followed by # to make relationship with map
+3-identify the coordinats of part of image where you want to implement map feature. 
+4-We should always identify image cord in the form of shape
+
+rect - defines a rectangular region 
+circle - defines a circular region 
+poly - defines a polygonal region 
+default - defines the entire region
+
+Note:
+
+To get the cordinares use website - https://www.image-map.net/
+-->
+
+<!--Click on the Logo to get redirected which is rectangle -->
+<img src="image/img1.png" alt="img"  width="300px" Height="200px" usemap="#dtap">
+<map name="dtap">
+<area shape="rect" coords="173,103,38,21" href="https://dtap.in" alt="img">
+</map>
+
+<br>
+
+<!--Click on the bread to get redirected wich is polygon -->
+<img src="https://www.w3schools.com/html/frenchfood.jpg" alt="img"   usemap="#tap">
+<map name="tap">
+<area shape="poly" coords="132,329,157,300,176,273,195,241,205,199,190,141,150,121,126,142,102,162,87,186,75,201,49,236,43,259,39,273,39,293,39,311,38,333,52,342,74,348,100,349" href="https://dtap.in" alt="img">
+</map> 
+
+<br>
+
+<!--Click on the tea plate to get redirected wich is circle-->
+<img src="https://www.w3schools.com/html/workplace.jpg" alt="img"   usemap="#ap">
+<map name="ap">
+<area shape="circle" coords="340,303,51" href="https://dtap.in" alt="img">
+</map> 
+
+</body>
+</html>
